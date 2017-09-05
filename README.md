@@ -44,12 +44,12 @@
   * you are only required to create CRUD operations for a single resource of your backend
   * **note:** be sure to remove auth from any routes that require it
 * use the react/redux best practices we've learned to date
-* add validation in your redux routers
+* add validation in your redux reducers
 * add reporter and thunk middleware to your redux store
 * create async action creators for making ajax request to your backend
 * create sync action creators (regular action creators that return an object literal) for updating your app store
 
-#### Test
+#### Bonus - 3pts: Test
 * test your redux reducers
 * test your action creators
 * test at least 1 component (with the exception of `<App />`)
