@@ -1,55 +1,58 @@
-![cf](https://i.imgur.com/7v5ASc8.png) 31: Async Actions
+![DV](https://www.deltavcodeschool.com/wp-content/uploads/DeltaV.png) 31: Async Actions
 ======
 
 ## Submission Instructions
-* fork this repository & create a new branch for your work
-* write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-susan`
-* push to your repository
-* submit a pull request to this repository
-* submit a link to your PR in canvas
-* write a question and observation on canvas
-
-## Learning Objectives
-* students will be able to create thunk based middleware for redux
-* students will be able to create asynchronous action creators
+  * Work in a fork of this repository
+  * Work in a branch on your fork
+  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
+  * Submit a pull request to this repository
+  * Submit a link to your pull request on canvas
+  * Submit a question, observation, and how long you spent on canvas  
 
 ## Requirements  
 #### Configuration  
 
-##### backend
-* copy your cf-gram (or comparable) API into a directory labeled `backend`
+##### backend/
+* copy your lab-14 or comprable api into into a backend directory
+##### frontend/
+* **README.md** -- with a documention about your lab
+* **.babelrc** -- with all dependencies and dev-dependencies
+* **.eslintrc** -- with the class .eslintrc file
+* **.gitignore** -- with a robust gitignore
+* **.eslintignore** -- with the class .eslintignore
+* **yarn.lock** -- with the yarn lockfile
+* **package.json** -- with all dependencies and dev-dependencies
+* **webpack.config.js** -- with webpack config
+* **src/** -- containing the front end code
+* **src/main.js** -- renders the app
+* **src/style** -- containing your sass
+* **src/style/main.scss** -- for importing and including reset and base
+* **src/style/_vars.scss** -- sass variables
+* **src/style/_reset.scss** -- sass reset
+* **src/style/_base.scss** -- base styles
+* **src/style/_layout.scss** -- layout styles
 
-##### frontend
-* `README.md`
-* `.babelrc`
-* `.gitignore`
-* `package.json`
-* `webpack.config.js`
-* `src/**`
-* `src/main.js`
-* `src/style`
-* `src/style/main.scss`
-* `src/style/lib`
-  * `_vars.scss`
-* `src/style/base`
-  * `_base.scss`
-  * `_reset.scss`
-* `src/style/layout`
-  * `_header.scss`
-  * `_footer.scss`
-  * `_content.scss`
+Your package.json must include scripts for:
+
+* `lint`
+* `test`
 
 #### Feature Tasks
-* create a simple front end for your cf-gram (or comparable) API
-  * you are only required to create CRUD operations for a single resource of your backend
-  * **note:** be sure to remove auth from any routes that require it
-* use the react/redux best practices we've learned to date
-* add validation in your redux reducers
-* add reporter and thunk middleware to your redux store
-* create async action creators for making ajax request to your backend
-* create sync action creators (regular action creators that return an object literal) for updating your app store
+* Create a frontend for your lab-14-two-resource-api.
+ * You can also choose to to instead use a comprable REST api that does not have auth (must permit full CRUD)
+* You are only required to create CRUD opperations for a single resource of your bakend
+* Use react/redux best practices
+* Add validation in your redux routers
+* Add reporter and thunk middleware to your redux store
+* make async action creators for making ajax request to your backend
+* make sync action creators from updating your app store
 
-#### Bonus - 3pts: Test
-* test your redux reducers
-* test your action creators
-* test at least 1 component (with the exception of `<App />`)
+#### Test
+* Test your redux reducers
+* Test your util methods
+
+## Bonus 2pts
+* Create full crud for two resources
+
+####  Documentation  
+Write a description of the project in your README.md
